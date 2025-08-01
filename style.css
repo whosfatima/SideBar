@@ -94,30 +94,31 @@ body.open header > h1 {
   border-left: 3px solid transparent;
   transition: all 0.4 ease-in-out;
 }
-.sidenar-menu > button:hover{
-    border-left:  3px solid #f9f9f9;
+.sidenar-menu > button:hover {
+  border-left: 3px solid #f9f9f9;
 }
 
-.sidenar-menu > button.has-border{
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    margin-bottom: 1rem;
+.sidenar-menu > button.has-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
 }
 .sidenar-menu > button > i {
-    font-size: 25px;
-    color: #f9f9f9;
-    transition: all 0.4s ease-in-out;
+  font-size: 25px;
+  color: #f9f9f9;
+  transition: all 0.4s ease-in-out;
 }
-.sidenar-menu > button:hover > i,.sidenar-menu > button:hover > span{
-    color: #dbdbdb;
-} 
-.sidenar-menu > button> span{
-    color: #f9f9f9;
-    opacity: 0;
-    transition: 0.4s all ease-in-out;
+.sidenar-menu > button:hover > i,
+.sidenar-menu > button:hover > span {
+  color: #dbdbdb;
+}
+.sidenar-menu > button > span {
+  color: #f9f9f9;
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
 }
 
-body.open .sidenar-menu > button > span{
-    opacity: 1;
-        transition: 0.4s all ease-in-out;
+body.open .sidenar-menu > button > span {
+  opacity: 1;
+  transition: 0.4s all ease-in-out;
 }
