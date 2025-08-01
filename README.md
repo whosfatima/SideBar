@@ -24,7 +24,7 @@ When expanded, menu item labels become visible alongside icons.
 
 ## 🔗 Demo
 
-👉 [View Live Demo](https://your-demo-link.com)
+👉 [View Live Demo]( https://whosfatima.github.io/SideBar/)
 
 ## 👩‍💻 Author
 
