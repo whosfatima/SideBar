@@ -1,58 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Ubunto', sans-serif;
-    background-color: #121212;
+body {
+  font-family: "Ubunto", sans-serif;
+  background-color: #121212;
 }
-button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
 }
-.sideBar{
-    position: absolute;
-    left: 0px;
-    top: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 76px;
-background-color: blue;
-transition: all 0.4s ease-in-out;
+.sideBar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 76px;
+  background-color: blue;
+  transition: all 0.4s ease-in-out;
 }
 
-body.open > .sideBar{
-width: 240px;
+body.open > .sideBar {
+  width: 240px;
 }
 .SideBar-Inner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
 }
-.SideBar-header{
-    display: flex;
-    align-items: center;
-    height: 69px;
-    padding: 0px 1.25rem 0px 0px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-left: 3px solid transparent;
-    transition: all ease-in-out 0.4s;
+.SideBar-header {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  padding: 0px 1.25rem 0px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 3px solid transparent;
+  transition: all ease-in-out 0.4s;
 }
-.SideBar-header:hover{
-    border-left: 3px solid #dbdbdb;
+.SideBar-header:hover {
+  border-left: 3px solid #dbdbdb;
 }
-.SideBar-burger{
-    width: 70px;
-    height:70px ;
-    display: grid;
-    place-items: center;
+.SideBar-burger {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
 }
-.SideBar-burger > i, body.open > .SideBar-burger > i{
-    font-size: 30px;
+.SideBar-burger > i,
+body.open > .SideBar-burger > i {
+  font-size: 30px;
+  color: #f9f9f9;
+  transition: 0.4s all ease-in-out;
+}
+.SideBar-burger:hover > i,
+body.open > .SideBar-burger:hover > i {
+  color: #dbdbdb;
+}
+header > h1 {
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+  color: #dbdbdb;
+}
+body.open header > h1 {
+  opacity: 1;
+  color: #dbdbdb;
+  transition: all 0.4 ease-in-out;
+}
+.sidenar-menu {
+  display: grid;
+}
+.sidenar-menu > button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  padding: 0px 22px;
+  gap: 12px;
+  align-items: center;
+  height: 55px;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 1;
+  border-left: 3px solid transparent;
+  transition: all 0.4 ease-in-out;
+}
+.sidenar-menu > button:hover{
+    border-left:  3px solid #f9f9f9;
+}
+
+.sidenar-menu > button.has-border{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 1rem;
+}
+.sidenar-menu > button > i {
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s ease-in-out;
+}
+.sidenar-menu > button:hover > i,.sidenar-menu > button:hover > span{
+    color: #dbdbdb;
+} 
+.sidenar-menu > button> span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+body.open .sidenar-menu > button > span{
+    opacity: 1;
+        transition: 0.4s all ease-in-out;
 }
